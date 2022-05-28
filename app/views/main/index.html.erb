@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col">
+        <h1>Index Controller</h1>
+
+        <ul>
+            <li> MVC - pattern </li>
+            <li> ERB Templates</li>
+        </ul>
+        <%=@test %>
+
+        <h1>Posts model example from SQLite3</h1>
+        <% @posts.each do |p| %>
+            <h2><%=p.title %></h2>
+            <p><%=p.content %></p>
+        <% end %>
+    </div>
+</div>
